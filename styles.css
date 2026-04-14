@@ -54,3 +54,15 @@
 .pokemon-id {
     position: relative;
 }
+
+.pokemon-height {
+    position: relative;
+    top: 52px;
+    left: 130px;
+}
+
+.pokemon-weight {
+    position: relative;
+    top: 45px;
+    left: 130px;
+}

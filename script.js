@@ -2,10 +2,19 @@ url = "https://pokeapi.co/api/v2/pokemon/"
 
 async function searchPokemon() {
     pokemon = document.getElementById("pokemonSearch").value;
+    if (!isNaN(pokemon)) {
+        pokemon = parseInt(pokemon, 10);
+    }
 
     try {
         const response = await fetch(`${url}${pokemon}`)
         const data = await response.json()
+
+        if (data.id > 649) {
+            document.getElementById("pokemon-name").textContent = "Pokemon very recent";
+            document.getElementById("pokemon-id").textContent = "NaN";
+            return;
+        }
 
         document.getElementById("pokemon-image-front").src = data.sprites.versions['generation-v']['black-white'].animated.front_default;
         document.getElementById("pokemon-image-back").src = data.sprites.versions['generation-v']['black-white'].animated.back_default;
