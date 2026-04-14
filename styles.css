@@ -1,0 +1,56 @@
+@import url('https://googleapis.com');
+
+.background {
+    position: absolute;
+    top: 120px;
+    left: 20;
+    z-index: -1;
+}
+
+.background img {
+    width: 280%;
+    height: 280%;
+}
+
+.pokemon-sprite {
+    position: absolute;
+    top: 185px;
+    left: 25px;
+    z-index: 1;
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+}
+
+.pokemon-image,
+.pokemon-image-shiny {
+    display: flex;
+    flex-direction: row;
+}
+
+.sprite {
+    width: 50%;
+    height: 50%;
+}
+
+.pokemon-info {
+    position: absolute;
+    top: 170px;
+    left: 365px;
+    z-index: 1;
+    font-family: 'Press Start 2P', cursive;
+    image-rendering: pixelated;
+    font-size: 22px;
+    -webkit-font-smoothing: none;
+}
+
+.pokemon-name {
+    position: relative;
+    top: -20px;
+    left: -50px;
+    font-size: 28px;
+}
+
+.pokemon-id {
+    position: relative;
+}

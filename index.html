@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a831d50-b2b4-449c-8e6f-09845f00ee8e/d2k6bdr-7dfaae85-2444-4b72-b653-54d38de39b9a.png/v1/fill/w_255,h_189,q_80,strp/pokedex_template_by_highlighterjuice_d2k6bdr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5IiwicGF0aCI6Ii9mLzRhODMxZDUwLWIyYjQtNDQ5Yy04ZTZmLTA5ODQ1ZjAwZWU4ZS9kMms2YmRyLTdkZmFhZTg1LTI0NDQtNGI3Mi1iNjUzLTU0ZDM4ZGUzOWI5YS5wbmciLCJ3aWR0aCI6Ijw9MjU1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.8TGq-hkI9IKA_p1MqNnERs9jWF5dqVWtGadMWi4R8E0"
+            alt="" id="background-image">
+    </div>
+    <div class="container">
+        <div class="Header">
+            <h1>Pokemon: </h1>
+            <input type="text" id="pokemonSearch">
+            <button onclick="searchPokemon()">Search</button>
+        </div>
+        <div class="pokemon-content">
+            <div class="pokemon-sprite">
+                <div class="pokemon-image" style="">
+                    <img class="sprite" src="" alt="" id="pokemon-image-front">
+                    <img class="sprite" src="" alt="" id="pokemon-image-back">
+                </div>
+                <div class="pokemon-image-shiny" style="">
+                    <img class="sprite" src="" alt="" id="pokemon-image-shiny-front">
+                    <img class="sprite" src="" alt="" id="pokemon-image-shiny-back">
+                </div>
+            </div>
+
+            <div class="pokemon-info">
+                <p class="pokemon-id">ID: <span id="pokemon-id"></span></p>
+                <p class="pokemon-name"><span id="pokemon-name"></span></p>
+                <p class="pokemon-height"><span id="pokemon-height"></span></p>
+                <p class="pokemon-weight"><span id="pokemon-weight"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
