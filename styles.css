@@ -22,15 +22,19 @@
     height: 250px;
 }
 
-.pokemon-image,
-.pokemon-image-shiny {
-    display: flex;
-    flex-direction: row;
+.pokemon-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 100%
 }
 
 .sprite {
-    width: 50%;
-    height: 50%;
+    object-fit: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 .pokemon-info {
@@ -65,4 +69,21 @@
     position: relative;
     top: 45px;
     left: 130px;
+}
+
+.types {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -140px;
+    left: 80px;
+}
+
+.pokemon-type1 {
+    position: relative;
+}
+
+.pokemon-type2 {
+    position: relative;
+    left: 80px;
 }

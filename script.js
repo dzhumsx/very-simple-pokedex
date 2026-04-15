@@ -25,6 +25,10 @@ async function searchPokemon() {
         document.getElementById("pokemon-name").textContent = data.name.charAt(0).toUpperCase() + data.name.slice(1);
         document.getElementById("pokemon-height").textContent = data.height / 10 + " m";
         document.getElementById("pokemon-weight").textContent = data.weight / 10 + " Kg";
+
+        document.getElementById("pokemon-type1").textContent = data.types[0].type.name.charAt(0).toUpperCase() + data.types[0].type.name.slice(1);
+        document.getElementById("pokemon-type2").textContent = data.types[1].type.name.charAt(0).toUpperCase() + data.types[1].type.name.slice(1);
+
     } catch (err) {
         document.getElementById("pokemon-name").textContent = "Pokemon not found";
         document.getElementById("pokemon-id").textContent = "NaN";
